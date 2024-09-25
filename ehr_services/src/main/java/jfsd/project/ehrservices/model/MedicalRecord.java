@@ -14,11 +14,17 @@ public class MedicalRecord {
     @Column(name = "patient_id", nullable = false)
     private Long patientId;
 
-    @Column(name = "record_type", nullable = false)
-    private String recordType;
+    @Column(name = "diagnosis", columnDefinition = "TEXT", nullable = false)
+    private String diagnosis;
 
-    @Column(name = "record_data", columnDefinition = "TEXT")
-    private String recordData;
+    @Column(name = "medication", columnDefinition = "TEXT")
+    private String medication;
+
+    @Column(name = "tests", columnDefinition = "TEXT")
+    private String tests;
+
+    @Column(name = "comments", columnDefinition = "TEXT")
+    private String comments;
 
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
@@ -45,20 +51,36 @@ public class MedicalRecord {
         this.patientId = patientId;
     }
 
-    public String getRecordType() {
-        return recordType;
+    public String getDiagnosis() {
+        return diagnosis;
     }
 
-    public void setRecordType(String recordType) {
-        this.recordType = recordType;
+    public void setDiagnosis(String diagnosis) {
+        this.diagnosis = diagnosis;
     }
 
-    public String getRecordData() {
-        return recordData;
+    public String getMedication() {
+        return medication;
     }
 
-    public void setRecordData(String recordData) {
-        this.recordData = recordData;
+    public void setMedication(String medication) {
+        this.medication = medication;
+    }
+
+    public String getTests() {
+        return tests;
+    }
+
+    public void setTests(String tests) {
+        this.tests = tests;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
     }
 
     public Date getCreatedAt() {
