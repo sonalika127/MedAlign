@@ -1,0 +1,14 @@
+.patient-list {
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.patient-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.patient-item:hover {
+    background-color: #f9f9f9;
+}

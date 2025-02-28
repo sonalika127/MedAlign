@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+}
+
+/* Responsive Container */
+.patient-dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card Hover Effect */
+.patient-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patient-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Avatar */
+.patient-avatar {
+    border: 4px solid #3182ce;
+    object-fit: cover;
+}
+
+/* Health Stats Icons */
+.health-stat-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Chart Styles */
+.health-chart {
+    width: 100%;
+    height: 200px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .patient-dashboard-container {
+        padding: 10px;
+    }
+
+    .health-stat-icon {
+        font-size: 32px;
+    }
+}
+
+/* Gradient Backgrounds */
+.gradient-background {
+    background: linear-gradient(135deg, #f0f2f5 0%, #e6e9ef 100%);
+}
+
+.stat-gradient-background {
+    background: linear-gradient(145deg, #f0f5fc, #e6eaf3);
+    box-shadow: 4px 4px 10px #d1d9e6, -4px -4px 10px #ffffff;
+}
+
+/* Button Styles */
+.patient-action-button {
+    text-transform: none;
+    margin: 0 5px;
+}

@@ -1,0 +1,25 @@
+.assignments-container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    margin-left: auto;
+}
+
+.MuiTableCell-root {
+    padding: 16px;
+}
