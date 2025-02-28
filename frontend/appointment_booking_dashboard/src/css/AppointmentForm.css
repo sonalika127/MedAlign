@@ -1,0 +1,71 @@
+/* AppointmentForm.css */
+.form-container {
+    max-width: 500px;  /* Set a maximum width for the form */
+    margin: 40px auto; /* Center the form horizontally */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #5a67d8;
+  }
+  
+  .form-submit {
+    text-align: center;
+  }
+  
+  .submit-btn {
+    background-color: #5a67d8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%; /* Ensure button takes full width of the form */
+  }
+  
+  .submit-btn:hover {
+    background-color: #4c51bf;
+  }
+  
+  .submit-btn:focus {
+    outline: none;
+  }
+  
